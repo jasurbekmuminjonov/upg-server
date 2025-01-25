@@ -19,8 +19,7 @@ const OrderSchema = new mongoose.Schema({
     },
     region: {
         type: String,
-        required: true,
-        enum: ["namangan", "fargona", "andijon", "toshkent", "toshkent_shahri", "sirdaryo", "navoiy", "samarqand", "buxoro", "jizzax", "qashqadaryo", "surxondaryo", "xorazm", "qoraqalpogiston"]
+        required: true
     },
     payment_summ: {
         type: Number,

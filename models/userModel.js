@@ -3,10 +3,7 @@ const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
     firstname: String,
     lastname: String,
-    region: {
-        type: String,
-        enum: ["namangan", "fargona", "andijon", "toshkent", "toshkent_shahri", "sirdaryo", "navoiy", "samarqand", "buxoro", "jizzax", "qashqadaryo", "surxondaryo", "xorazm", "qoraqalpogiston"]
-    },
+    region: String,
     email: String,
     password: String,
     isAdmin: {
